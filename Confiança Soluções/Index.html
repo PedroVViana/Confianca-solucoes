@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confiança Soluções</title>
+    <link rel="stylesheet" href="/Assets/Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <section id="home">
+        <div class="menu">
+            <div class="imgMenu">
+                <img src="/Assets/Confiança Soluções/Logotipo/11.png">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#beneficios">Sobre</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+            <a class="contacts" href="https://api.whatsapp.com/send?phone=81999497658" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            <a class="contacts" href="https://www.instagram.com/confianca_solucoes/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            <div class="phone-button">
+                <ion-icon class="open" name="menu-outline"></ion-icon>
+                <ion-icon class="close" name="close-outline"></ion-icon>
+            </div>
+        </div>
+        <script>
+            window.addEventListener('scroll',()=>{
+                document.querySelector('.menu').classList.toggle('nav-scroll', window.scrollY>0)
+            })
+
+            document.querySelector('.open').addEventListener('click',()=>{
+                document.querySelector('.close').style.display='block'
+                document.querySelector('.open').style.display='none'
+                document.querySelector('ul').style.left='0'
+                document.querySelector('ul').style.transition='0.5s'
+            });
+
+            document.querySelector('.close').addEventListener('click',()=>{
+                document.querySelector('.close').style.display='none'
+                document.querySelector('.open').style.display='block'
+                document.querySelector('ul').style.left='-270px'
+                document.querySelector('ul').style.transition='0.5s'
+            });
+        </script>
+        <div class="content">
+            <h2>Estamos aqui para ajudar você a realizar os seus sonhos!</h2>
+            <h3>Soluções em crédito imobiliário:</h3>
+            <div class="benefi">
+                <div class="card">
+                    <img src="/Assets/photos/17545110-repita-a-ilustracao-de-contorno-do-de-icone-de-porcentagem-de-financiamento-imobiliario-vetor.jpg">
+                    <h1>Financiamento <br> imobiliário</h1>
+                </div>
+                <div class="card">
+                    <img src="/Assets/photos/9044939.png">
+                    <h1>Home Equity</h1>
+                </div>
+                <div class="card">
+                    <img src="/Assets/photos/download.png">
+                    <h1>Consorcio imobiliário</h1>
+                </div>
+            </div>
+            <a href="#beneficios">
+                <button>
+                    <span>Contate me</span>
+                </button>
+            </a>  
+        </div>
+        <div class="imgBx">
+            <img src="/Assets/photos/edit-removebg-preview.png">
+        </div>
+    </section>
+
+    <section id="beneficios">
+        <div class="parceiros">
+            <div class="btn-p"><img src="/Assets/photos/Bradesco-SF.png"></div>
+            <div class="btn-p"><img src="/Assets/photos/BSB-SF.png"></div>
+            <div class="btn-p"><img src="/Assets/photos/Inter-SF.png"></div>
+            <div class="btn-p"><img src="/Assets/photos/Itau-SF.png"></div> 
+            <div class="btn-p"><img src="/Assets/photos/logo-cons-magalu-2023.png"></div>    
+        </div>
+
+        <div class="destaques">
+            <h3>Por que você deveria fazer um crédito imobiliário?</h3>
+            <p>Com o mercado imobiliário aquecido, este pode ser o momento ideal para investir no seu próprio lar através do Crédito Imobiliário. As oportunidades estão aí, e a conquista do seu imóvel dos sonhos está ao seu alcance. Não deixe para depois o que pode ser realizado hoje.
+
+                Seja para comprar sua primeira casa, trocar de residência ou investir em um imóvel, o Crédito Imobiliário é uma opção que oferece inúmeras vantagens. Agarre essa oportunidade, dê o passo rumo à realização dos seus sonhos e abra as portas para um futuro próspero e cheio de conquistas. A chave para o seu lar está no Crédito Imobiliário!</p>
+        </div>
+
+        <div class="section-B">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="title">
+                            <h2>Processos</h2>
+                        </div>
+                        <div class="contents">
+                            <div class="box">
+                                <h4>Financiamento imobiliário</h4>
+                                <ul>
+                                    <li>Melhores taxas;</li>
+                                    <li>Apartir de 10% de entrada;</li>
+                                    <li>Financie em até 35 anos;</li>
+                                    <li>Processo Multibancos.</li>
+                                </ul>
+                            </div>
+                            <div class="box">
+                                <h4>Home Equity</h4>
+                                <ul>
+                                    <li>Sua casa como garantia;</li>
+                                    <li>Pagamento em até 240 parcelas;</li>
+                                    <li>Juros mais baixos.</li>
+                                </ul>
+                            </div>
+                            <div class="box">
+                                <h4>Consórcio imobiliário</h4>
+                                <ul>
+                                    <li> A melhor taxa de administração;</li>
+                                    <li>Use também para comprar terreno, construção, reformas e empreendimentos comerciais.</li>
+                                    <li>Pagamento em até 240 parcelas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="contatos" id="contatos">
+        <div class="Boxcontatos">
+            <h1>Faça sua simulação!</h1>
+        </div>
+        <form action="https://formsubmit.co/confianca.solucoes.credito@gmail.com" method="POST">
+            <div class="form">
+                <div class="inputs">
+                    <input name="Nome" placeholder="Nome" type="text" required>
+                </div>
+                <div class="inputs">
+                    <input name="Email" placeholder="Email" type="email" required>
+                </div>
+                <div class="inputs">
+                    <input name="Telefone" placeholder="Telefone" type="text" required>
+                </div>
+                <div class="inputscomments">
+                    <textarea name="mensagem" placeholder="Mensagem" cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                </div>
+                <div class="inputs">
+                    <input class="inputLogin" type="submit" value="Enviar">
+                </div>
+                <p>Seus dados estão seguros, não praticamos spam</p>
+            </div>
+        </form>
+        </div>
+    </section>
+</body>
+</html>
